@@ -1,0 +1,26 @@
+Source: bspwm-extra
+Section: utils
+Priority: extra
+Maintainer: Zhong Jianxin <azuwis@gmail.com>
+Build-Depends: debhelper (>=9),
+               libasound2-dev,
+               libxcb1-dev,
+               libxcb-icccm4-dev,
+               libxcb-ewmh-dev,
+               libxcb-util0-dev
+Standards-Version: 3.9.6
+Homepage: https://github.com/baskerville
+
+Package: bspwm-extra
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Extra utils for bspwm
+ backlight - Get and set the backlight brightness
+ battery - Battery info for lemonbar
+ clock - Clock for lemonbar
+ essid - WiFi info for lemonbar
+ exist - Check file exist for lemonbar
+ volume - Volume for lemonbar
+ xtitle - Outputs X window titles
+ xwinfo - Print window informations

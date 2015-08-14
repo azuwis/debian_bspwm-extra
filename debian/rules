@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE = 1
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	dh_auto_build -Dbacklight
+	dh_auto_build -Dsutils
+	dh_auto_build -Dxtitle
+	dh_auto_build -Dxwinfo
+
+override_dh_auto_install:
+	dh_auto_install -Dbacklight -- PREFIX=/usr
+	dh_auto_install -Dsutils -- PREFIX=/usr
+	dh_auto_install -Dxtitle -- PREFIX=/usr
+	dh_auto_install -Dxwinfo -- PREFIX=/usr
