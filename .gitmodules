@@ -1,0 +1,12 @@
+[submodule "xtitle"]
+	path = xtitle
+	url = https://github.com/baskerville/xtitle.git
+[submodule "sutils"]
+	path = sutils
+	url = https://github.com/baskerville/sutils.git
+[submodule "backlight"]
+	path = backlight
+	url = https://github.com/baskerville/backlight.git
+[submodule "xwinfo"]
+	path = xwinfo
+	url = https://github.com/baskerville/xwinfo.git
